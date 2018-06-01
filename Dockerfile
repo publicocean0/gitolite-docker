@@ -1,5 +1,5 @@
-FROM ubuntu:trusty
-MAINTAINER Eric VILLARD <dev@eviweb.fr>
+FROM centos:latest
+MAINTAINER Cristian Lorenzetto <cristian.lorenzetto@gmail.com>
 LABEL version="0.1.0"
 LABEL description="Gitolite ready to go..."
 
