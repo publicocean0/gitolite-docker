@@ -4,7 +4,7 @@ SSH_KEYDIR=${DIR}/.user-keys
 
 if [ ! -e ${SSH_KEYDIR}/*.pub ]
 then
-    ssh-keygen -t rsa -C "${USER}@gitolite-docker" -N "" -f ${SSH_KEYDIR}/${USER}
+    ssh-keygen -t rsa -C "${USER}@gitolite" -N "" -f ${SSH_KEYDIR}/${USER}
 fi
 
 cd "${DIR}"
