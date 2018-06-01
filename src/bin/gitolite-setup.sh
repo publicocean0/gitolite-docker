@@ -3,7 +3,7 @@
 SSH_DIR=${HOME}/.ssh
 BIN_DIR=${HOME}/bin
 DEFAULT_SSH_KEY=${SSH_DIR}/id_rsa
-GITOLITE_REPO="https://github.com/sitaramc/gitolite.git"
+GITOLITE_REPO="https://github.com/publicocean0/gitolite.git"
 
 [ ! -e ${SSH_DIR} ] && mkdir ${SSH_DIR} # should already exists
 [ ! -e ${BIN_DIR} ] && mkdir ${BIN_DIR} # should already exists
@@ -27,7 +27,7 @@ function generateSshKey()
 {
     cd ${HOME}
     echo "Generate defaut ssh key for default admin user: ${USER}"
-    ssh-keygen -t rsa -C "${USER}@gitolite-docker" -N "" -f ${DEFAULT_SSH_KEY}
+    ssh-keygen -t rsa -C "${USER}@gitolite" -N "" -f ${DEFAULT_SSH_KEY}
 }
 
 function getAdminSshKey()
