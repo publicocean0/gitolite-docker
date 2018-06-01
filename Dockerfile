@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7
 MAINTAINER Cristian Lorenzetto <cristian.lorenzetto@gmail.com>
 LABEL version="0.1.0"
 LABEL description="Gitolite ready to go..."
