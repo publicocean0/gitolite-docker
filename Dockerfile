@@ -4,10 +4,11 @@ LABEL version="0.1.0"
 LABEL description="Gitolite ready to go..."
 
 # install packages
-ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update \
-    && apt-get upgrade -y \
-    && apt-get -yq install \
+ENV CENTOS_FRONTEND noninteractive
+RUN yum update \
+    && yum upgrade -y \
+    && yum -y install \
+        autoconf \
         git \
         ssh-client \
         openssh-server \
